@@ -11,13 +11,15 @@
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
-    "test.watch": "stencil test --spec --e2e --watch"
+    "test.watch": "stencil test --spec --e2e --watch",
+    "heroku-prebuild": "npm run build"
   },
   "dependencies": {
     "@ionic/core": "4.0.0",
     "@stencil/sass": "^0.1.1"
   },
   "devDependencies": {
-    "@stencil/core": "0.17.0"
+    "@stencil/core": "0.17.0",
+    "workbox-build": "3.4.1"
   }
 }
