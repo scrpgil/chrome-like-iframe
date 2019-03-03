@@ -5,18 +5,19 @@
   "description": "chrome-like-iframe",
   "license": "MIT",
   "files": [
-    "dist/"
+    "www/"
   ],
   "scripts": {
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watch",
-    "heroku-postbuild": "npm run build && cp -rf www/* ./ && mv www dist"
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@ionic/core": "4.0.0",
-    "@stencil/sass": "^0.1.1"
+    "@stencil/sass": "^0.1.1",
+    "express": "^4.16.4"
   },
   "devDependencies": {
     "@stencil/core": "0.17.0",
